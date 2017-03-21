@@ -5,37 +5,35 @@ Slides for this session can be found [HERE](http://bit.ly/2mDy0Vy).
 
 ## Simple Threads Example - us.juggl.twentyseventeen.march.SimpleThreads
 
-### Run with `mvn clean compile exec:java@simple`
+* Run with `mvn clean compile exec:java@simple`
 
 
 ## Thread Pool Example - us.juggl.twentyseventeen.march.ThreadPool
 
-### Run with `mvn clean compile exec:java@threadpool`
+* Run with `mvn clean compile exec:java@threadpool`
 
 
 ## Parallel Stream Example - us.juggl.twentyseventeen.march.ParallelStream
 
-### Run with `mvn clean compile exec:java@parallelstream`
+* Run with `mvn clean compile exec:java@parallelstream`
 
 
 ## Synchronized Block Deadlock - us.juggl.twentyseventeen.march.SynchronizedBlockDeadlock
 
-### Run with `mvn clean compile exec:java@syncblockdeadlock`
-
-### How to diagnose a deadlock?
-* `jstack -l <PID>`
-* jvisualvm
-* jconsole
-* ThreadMXBeam/JMX - http://javaconceptoftheday.com/detect-deadlocked-threads-using-threadmxbean-class-java/
+* Run with `mvn clean compile exec:java@syncblockdeadlock`
+* How to diagnose a deadlock?
+  * `jstack -l <PID>`
+  * jvisualvm
+  * jconsole
+  * ThreadMXBeam/JMX - http://javaconceptoftheday.com/detect-deadlocked-threads-using-threadmxbean-class-java/
 
 ## ReentrantReadWriteLock Deadlock - us.juggl.twentyseventeen.march.DeadlockHell
 
-### Run with `mvn clean compile exec:java@deadlockhell`
-
-### How to diagnose this deadlock?
-* `jstack -l <PID>`
-* jvisualvm
-* ThreadMXBeam/JMX - http://javaconceptoftheday.com/detect-deadlocked-threads-using-threadmxbean-class-java/
+* Run with `mvn clean compile exec:java@deadlockhell`
+* How to diagnose this deadlock?
+  * `jstack -l <PID>`
+  * jvisualvm
+  * ThreadMXBeam/JMX - http://javaconceptoftheday.com/detect-deadlocked-threads-using-threadmxbean-class-java/
 
 None of the tools above will indicate directly that there is a deadlock. 
 

@@ -37,7 +37,7 @@ public class ThreadPool {
         long startTime = Instant.now().toEpochMilli();
         rnd.ints(10, 1000, 10000).forEach(i -> {
             Fibonacci thread = new Fibonacci(i);
-            threadPool.execute(thread);
+            threadPool.submit(thread);
         });
         
         threadPool.shutdown();
